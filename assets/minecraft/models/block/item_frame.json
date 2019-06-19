@@ -1,0 +1,29 @@
+{
+	"credit": "Made by anotherWryTeenager using Blockbench",
+	"textures": {
+		"wood": "block/birch_planks",
+		"particle": "block/birch_planks"
+	},
+	"elements": [
+		{
+			"from": [2, 2, 16],
+			"to": [14, 3, 16],
+			"faces": {
+				"north": {"uv": [2, 13, 14, 14], "texture": "#wood"}
+			}
+		},
+		{
+			"from": [2, 13, 16],
+			"to": [14, 14, 16],
+			"faces": {
+				"north": {"uv": [2, 2, 14, 3], "texture": "#wood"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "item_frame",
+			"children": [0, 1]
+		}
+	]
+}

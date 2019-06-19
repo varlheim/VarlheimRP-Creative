@@ -1,0 +1,45 @@
+{
+	"credit": "Made by anotherWryTeenager using Blockbench",
+	"textures": {
+		"0": "block/polished_white_cobblestone",
+		"1": "block/white_cobblestone",
+		"particle": "block/polished_white_cobblestone"
+	},
+	"elements": [
+		{
+			"name": "top bar",
+			"from": [7, 13, 0],
+			"to": [9, 16, 6],
+			"faces": {
+				"north": {"uv": [7, 0, 9, 3], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [6, 0, 0, 3], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 3], "texture": "#0"},
+				"up": {"uv": [7, 0, 9, 6], "texture": "#0"},
+				"down": {"uv": [7, 10, 9, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "lower bar",
+			"from": [6, 0, 0],
+			"to": [10, 5, 9],
+			"faces": {
+				"north": {"uv": [6, 11, 10, 16], "texture": "#1", "cullface": "north"},
+				"east": {"uv": [7, 11, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 11, 9, 16], "texture": "#1"},
+				"up": {"uv": [6, 0, 10, 9], "texture": "#1"},
+				"down": {"uv": [6, 7, 10, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 5, 0],
+			"to": [9, 13, 1],
+			"faces": {
+				"north": {"uv": [7, 3, 9, 11], "texture": "#0"},
+				"east": {"uv": [1, 3, 0, 11], "texture": "#0"},
+				"south": {"uv": [7, 3, 9, 11], "texture": "#0"},
+				"west": {"uv": [0, 3, 1, 11], "texture": "#0"},
+				"up": {"uv": [7, 0, 9, 1], "texture": "#0"}
+			}
+		}
+	]
+}
