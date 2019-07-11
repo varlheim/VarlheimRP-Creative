@@ -1,9 +1,0 @@
-{
-    "variants": {
-        "": [
-            { "model": "block/white_stained_glass1" },
-	    { "model": "block/white_stained_glass2" },
-            { "model": "block/white_stained_glass3" }
-        ]
-    }
-}
