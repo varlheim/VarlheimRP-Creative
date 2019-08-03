@@ -1,0 +1,165 @@
+{
+    "multipart": [
+        {   "when": { "OR": [
+                {"north": "none", "east": "none", "south": "none", "west": "none"},
+                {"north": "side|up", "east": "side|up" },
+                {"east": "side|up", "south": "side|up" },
+                {"south": "side|up", "west": "side|up"},
+                {"west": "side|up", "north": "side|up"}
+            ]},
+            "apply": { "model": "block/redstone_dust_dot" }
+        },
+        {   "when": { "OR": [
+                { "north": "side|up" },
+                { "north": "none", "east": "none", "south": "side|up", "west": "none" }
+            ]},
+            "apply": { "model": "block/redstone_dust_side0" }
+        },
+        {   "when": { "OR": [
+                { "south": "side|up" },
+                { "north": "side|up", "east": "none", "south": "none", "west": "none" }
+            ]},
+            "apply": { "model": "block/redstone_dust_side_alt0" }
+        },
+        {   "when": { "OR": [
+                { "east": "side|up" },
+                { "north": "none", "east": "none", "south": "none", "west": "side|up" }
+            ]},
+            "apply": { "model": "block/redstone_dust_side_alt1", "y": 270 }
+        },
+        {   "when": { "OR": [
+                { "west": "side|up" },
+                { "north": "none", "east": "side|up", "south": "none", "west": "none" }
+            ]},
+            "apply": { "model": "block/redstone_dust_side1", "y": 270 }
+        },
+        {   "when": { "north": "up" },
+            "apply": { "model": "block/redstone_dust_up" }
+        },
+        {   "when": { "east": "up" },
+            "apply": { "model": "block/redstone_dust_up", "y": 90 }
+        },
+        {   "when": { "south": "up" },
+            "apply": { "model": "block/redstone_dust_up", "y": 180 }
+        },
+        {   "when": { "west": "up" },
+            "apply": { "model": "block/redstone_dust_up", "y": 270 }
+        },
+		
+		
+
+		
+		
+		
+		{	"when": {"north": "side", "east": "side|none", "south": "side|none", "west": "side|none"},
+			"apply": { "model": "block/rope/end_flat"}
+		},
+		{	"when": {"north": "side|none", "east": "side", "south": "side|none", "west": "side|none"},
+			"apply": { "model": "block/rope/end_flat", "y": 90}
+		},
+		{	"when": {"north": "side|none", "east": "side|none", "south": "side", "west": "side|none"},
+			"apply": { "model": "block/rope/end_flat", "y": 180}
+		},
+		{	"when": {"north": "side|none", "east": "side|none", "south": "side|none", "west": "side"},
+			"apply": { "model": "block/rope/end_flat", "y": 270}
+		},
+		
+        {   "when": { "OR": [
+				{"north": "up", "east": "none", "south": "up", "west": "none"},
+				{"north": "none", "east": "up", "south": "none", "west": "up"},
+                {"north": "up", "east": "side|up", "south": "side|up|none", "west": "side|up|none"},
+				{"north": "up", "east": "side|up|none", "south": "side|up|none", "west": "side|up"},							
+                {"north": "side|up|none", "east": "up", "south": "side|up", "west": "side|up|none"},
+				{"north": "side|up", "east": "up", "south": "side|up|none", "west": "side|up|none"},			
+                {"north": "side|up|none", "east": "side|up|none", "south": "up", "west": "side|up"},
+				{"north": "side|up|none", "east": "side|up", "south": "up", "west": "side|up|none"},		
+                {"north": "side|up", "east": "side|up|none", "south": "side|up|none", "west": "up"},
+				{"north": "side|up|none", "east": "side|up|none", "south": "side|up", "west": "up"}
+            ]},
+            "apply": { "model": "block/rope/knot_up" }
+        },
+		
+        {   "when": { "OR": [
+				{"north": "none", "east": "none", "south": "none", "west": "none"},
+				{"north": "side", "east": "side", "south": "side", "west": "side"},
+                {"north": "side", "east": "side|none", "south": "none", "west": "side|none"},
+                {"north": "side|none", "east": "side", "south": "side|none", "west": "none"},
+                {"north": "none", "east": "side|none", "south": "side", "west": "side|none"},
+                {"north": "side|none", "east": "none", "south": "side|none", "west": "side"}
+            ]},
+            "apply": { "model": "block/rope/knot_flat" }
+        },
+		
+		
+		{	"when": {"north": "up", "east": "none", "south": "none", "west": "none"},
+			"apply": { "model": "block/rope/end_up_s"}
+		},
+		{	"when": {"north": "none", "east": "up", "south": "none", "west": "none"},
+			"apply": { "model": "block/rope/end_up_s", "y": 90}
+		},
+		{	"when": {"north": "none", "east": "none", "south": "up", "west": "none"},
+			"apply": { "model": "block/rope/end_up_s", "y": 180}
+		},
+		{	"when": {"north": "none", "east": "none", "south": "none", "west": "up"},
+			"apply": { "model": "block/rope/end_up_s", "y": 270}
+		},
+		
+        {   "when": { "OR": [
+                {"north": "side", "east": "up", "south": "side|up|none", "west": "side|up|none"},
+                {"north": "side", "east": "side|up|none", "south": "up", "west": "side|up|none"},
+                {"north": "side", "east": "side|up|none", "south": "side|up|none|none", "west": "up"}
+            ]},
+            "apply": { "model": "block/rope/end_slope", "y": 0}
+        },
+        {   "when": { "OR": [
+                {"north": "up",		"east": "side", "south": "side|up|none", "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "side", "south": "up",	 "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "side", "south": "side|up|none", "west": "up"}
+            ]},
+            "apply": { "model": "block/rope/end_slope", "y": 90}
+        },
+        {   "when": { "OR": [
+                {"north": "up", 	"east": "side|up|none",	"south": "side", "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "up",	"south": "side", "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "side|up|none", "south": "side", "west": "up"}
+            ]},
+            "apply": { "model": "block/rope/end_slope", "y": 180}
+        },
+        {   "when": { "OR": [
+                {"north": "up",		"east": "side|up|none",	"south": "side|up|none",	"west": "side"},
+                {"north": "side|up|none",	"east": "up",	"south": "side|up|none",	"west": "side"},
+                {"north": "side|up|none",	"east": "side|up|none", "south": "up",		"west": "side"}
+            ]},
+            "apply": { "model": "block/rope/end_slope", "y": 270}
+        },
+		
+        {   "when": { "OR": [
+                {"north": "up", "east": "up|side", "south": "side|up|none", "west": "side|up|none"},
+                {"north": "up", "east": "side|up|none", "south": "up|side", "west": "side|up|none"},
+                {"north": "up", "east": "side|up|none", "south": "side|up|none|none", "west": "up|side"}
+            ]},
+            "apply": { "model": "block/rope/end_up", "y": 0}
+        },
+        {   "when": { "OR": [
+                {"north": "up|side",		"east": "up", "south": "side|up|none", "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "up", "south": "up|side",	 "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "up", "south": "side|up|none", "west": "up|side"}
+            ]},
+            "apply": { "model": "block/rope/end_up", "y": 90}
+        },
+        {   "when": { "OR": [
+                {"north": "up|side", 	"east": "side|up|none",	"south": "up", "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "up|side",	"south": "up", "west": "side|up|none"},
+                {"north": "side|up|none",	"east": "side|up|none", "south": "up", "west": "up|side"}
+            ]},
+            "apply": { "model": "block/rope/end_up", "y": 180}
+        },
+        {   "when": { "OR": [
+                {"north": "up|side",		"east": "side|up|none",	"south": "side|up|none",	"west": "up"},
+                {"north": "side|up|none",	"east": "up|side",	"south": "side|up|none",	"west": "up"},
+                {"north": "side|up|none",	"east": "side|up|none", "south": "up|side",		"west": "up"}
+            ]},
+            "apply": { "model": "block/rope/end_up", "y": 270}
+        }
+    ]
+}
